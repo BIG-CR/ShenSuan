@@ -24,15 +24,14 @@ echo " 神算-shensuan Skill 测试套件"
 echo "========================================"
 echo ""
 
-# === 测试1: 快速路径 ===
-echo "[1] 快速路径：三步出结果"
-R1=$(grep -c "快速路径" "$SKILL_DIR/SKILL.md")
-R2=$(grep -c "三步到位\|三步入结果\|直接排盘并默认出核心四法判词" "$SKILL_DIR/SKILL.md")
-R3=$(grep -c "默认：.*人生大概.*核心四法\|默认.*A.*1-4" "$SKILL_DIR/SKILL.md")
+# === 测试1: 三大分类 ===
+echo "[1] 三大分类入口"
+R1=$(grep -c "三大分类" "$SKILL_DIR/SKILL.md")
+R2=$(grep -c "分类一：八字\|分类二：问事情\|分类三：推演环境" "$SKILL_DIR/SKILL.md")
 if [ "$R1" -gt 0 ] && [ "$R2" -gt 0 ]; then
-    check "快速路径定义存在" "true"
+    check "三大分类定义存在" "true"
 else
-    check "快速路径定义存在" "false"
+    check "三大分类定义存在" "false"
 fi
 
 # === 测试2: 日柱精确计算 ===
@@ -115,24 +114,22 @@ else
     check "免责声明在输出末尾（非阻塞步骤）" "false"
 fi
 
-# === 测试6: AskUserQuestion存在 ===
-echo "[6] AskUserQuestion交互选择"
-R1=$(grep -c "AskUserQuestion" "$SKILL_DIR/SKILL.md")
-R2=$(grep -c "multiSelect" "$SKILL_DIR/SKILL.md")
-if [ "$R1" -ge 2 ] && [ "$R2" -gt 0 ]; then
-    check "AskUserQuestion已配置（维度+方法双问题）" "true"
+# === 测试6: 追问铁律 ===
+echo "[6] 追问到底机制"
+R1=$(grep -c "追问铁律\|问到底\|追问策略\|缺一项问一项" "$SKILL_DIR/SKILL.md")
+if [ "$R1" -ge 2 ]; then
+    check "追问铁律已配置" "true"
 else
-    check "AskUserQuestion已配置（维度+方法双问题）" "false"
+    check "追问铁律已配置" "false"
 fi
 
 # === 测试7: 缺信息追问 ===
-echo "[7] 缺信息追问"
-R1=$(grep -c "默认值.*提示\|默认值生效" "$SKILL_DIR/SKILL.md")
-R2=$(grep -c "未指定.*默认" "$SKILL_DIR/SKILL.md")
-if [ "$R1" -gt 0 ] || [ "$R2" -gt 0 ]; then
-    check "缺信息默认值提示机制存在" "true"
+echo "[7] 信息收集精度"
+R1=$(grep -c "必须收集\|精度要求\|精确到" "$SKILL_DIR/SKILL.md")
+if [ "$R1" -ge 3 ]; then
+    check "三类信息收集精度定义存在" "true"
 else
-    check "缺信息默认值提示机制存在" "false"
+    check "三类信息收集精度定义存在" "false"
 fi
 
 # === 测试8: 硬性检查规则 ===
