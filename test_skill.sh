@@ -148,7 +148,7 @@ check "三项硬性检查规则全部写入" "$ALL_CHECKS"
 
 # === 附加测试: 文件完整性 ===
 echo "[9] 文件完整性"
-REQUIRED_FILES="SKILL.md README.md LICENSE .gitignore methods.json tiaohou.json shensha.json industry_wuxing.json cases.json calendar_reference.json"
+REQUIRED_FILES="SKILL.md README.md LICENSE .gitignore methods.json tiaohou.json shensha.json industry_wuxing.json cases.json calendar_reference.json profiles.json"
 ALL_FILES="true"
 for f in $REQUIRED_FILES; do
     if [ ! -f "$SKILL_DIR/$f" ]; then
@@ -156,7 +156,7 @@ for f in $REQUIRED_FILES; do
         ALL_FILES="false"
     fi
 done
-check "10个必需文件全部存在" "$ALL_FILES"
+check "11个必需文件全部存在" "$ALL_FILES"
 
 # === 附加测试: methods.json 数量一致性 ===
 echo "[10] methods.json数量与SKILL.md一致"

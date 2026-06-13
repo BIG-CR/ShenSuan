@@ -61,6 +61,7 @@ Skill 自动激活，按四步工作流引导你完成：
 ├── industry_wuxing.json      # 五行×60个现代职业方向
 ├── cases.json                # 11个经典命例（诸葛亮/王阳明/管仲/曾国藩/曹操/武则天/苏轼/康熙/范蠡/雷军/李白）
 ├── calendar_reference.json   # 节气/五虎遁/五鼠遁/藏干/纳音 全套排盘参考
+├── profiles.json              # 用户档案本地存储（不上传，下次可继续用）
 ├── LICENSE                   # MIT
 └── README.md                 # 本文件
 ```
