@@ -59,7 +59,7 @@ Skill 自动激活，按四步工作流引导你完成：
 ├── tiaohou.json              # 调候用神速查表（120条，十天干×十二月支）
 ├── shensha.json              # 15种神煞起法规则
 ├── industry_wuxing.json      # 五行×60个现代职业方向
-├── cases.json                # 12个经典命例（诸葛亮/王阳明/管仲/曾国藩/曹操/武则天/苏轼/康熙/范蠡/雷军/李白等）
+├── cases.json                # 11个经典命例（诸葛亮/王阳明/管仲/曾国藩/曹操/武则天/苏轼/康熙/范蠡/雷军/李白）
 ├── calendar_reference.json   # 节气/五虎遁/五鼠遁/藏干/纳音 全套排盘参考
 ├── LICENSE                   # MIT
 └── README.md                 # 本文件

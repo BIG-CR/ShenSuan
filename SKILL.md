@@ -187,7 +187,7 @@ print(f'日柱: {tg[ganzhi%10]}{dz[ganzhi%12]}')
 | tiaohou.json | 调候用神速查表（120条） |
 | shensha.json | 15种神煞起法规则 |
 | industry_wuxing.json | 五行x60个现代职业 |
-| cases.json | 12个经典命例 |
+| cases.json | 11个经典命例 |
 | calendar_reference.json | 节气/五虎遁/五鼠遁/藏干/纳音 |
 
 ## 硬性检查规则
