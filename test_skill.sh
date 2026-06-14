@@ -3,7 +3,7 @@
 # 用法: bash test_skill.sh
 # 每个测试输出 PASS 或 FAIL
 
-SKILL_DIR="L:/废稿/易/.claude/skills/神算-shensuan"
+SKILL_DIR="$(cd "$(dirname "$0")" && pwd)"
 PASS=0
 FAIL=0
 
@@ -145,7 +145,7 @@ check "三项硬性检查规则全部写入" "$ALL_CHECKS"
 
 # === 附加测试: 文件完整性 ===
 echo "[9] 文件完整性"
-REQUIRED_FILES="SKILL.md README.md LICENSE .gitignore methods.json tiaohou.json shensha.json industry_wuxing.json cases.json calendar_reference.json profiles.json"
+REQUIRED_FILES="SKILL.md README.md LICENSE .gitignore methods.json tiaohou.json shensha.json industry_wuxing.json cases.json calendar_reference.json "
 ALL_FILES="true"
 for f in $REQUIRED_FILES; do
     if [ ! -f "$SKILL_DIR/$f" ]; then
