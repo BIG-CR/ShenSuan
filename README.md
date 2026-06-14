@@ -30,7 +30,7 @@ git clone https://github.com/BIG-CR/shensuan.git .claude/skills/神算-shensuan
 在 Claude Code 对话中直接输入出生信息即可触发：
 
 ```
-2004年1月11日 早上10点35分 出生，福建仙游，男
+2005年11月21日 早上11点3分 出生，福建厦门，男
 ```
 
 Skill 自动激活，按四步工作流引导你完成：
