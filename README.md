@@ -20,7 +20,7 @@
 
 ```bash
 # 克隆到 Claude Code 项目的 .claude/skills 目录
-git clone https://github.com/BIG-CR/神算-shensuan.git .claude/skills/神算-shensuan
+git clone https://github.com/BIG-CR/shensuan.git .claude/skills/神算-shensuan
 ```
 
 或在 `.claude/skills/` 下创建 `神算-shensuan/` 目录，放入本仓库全部文件。
